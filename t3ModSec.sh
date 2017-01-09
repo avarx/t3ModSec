@@ -6,7 +6,7 @@ sudo apt-get upgrade
 
 # ModSecurity
 sudo apt-get install libapache2-mod-security2 -y
-wget https://raw.githubusercontent.com/SpiderLabs/owasp-modsecurity-crs/v3.0/master/crs-setup.conf.example
+sudo wget https://raw.githubusercontent.com/SpiderLabs/owasp-modsecurity-crs/v3.0/master/crs-setup.conf.example
 sudo mv crs-setup.conf.example /etc/modsecurity/modsecurity.conf
 sudo wget https://raw.githubusercontent.com/Apache-Labor/labor/master/bin/.apache-modsec.alias
 sudo cat .apache-modsec.alias >> ~/.bash_aliases
