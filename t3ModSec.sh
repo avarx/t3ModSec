@@ -8,8 +8,11 @@ sudo apt-get upgrade
 sudo apt-get install libapache2-mod-security2 -y
 sudo wget https://raw.githubusercontent.com/SpiderLabs/owasp-modsecurity-crs/v3.0/master/crs-setup.conf.example
 sudo mv crs-setup.conf.example /etc/modsecurity/modsecurity.conf
-sudo wget https://raw.githubusercontent.com/Apache-Labor/labor/master/bin/.apache-modsec.alias
-sudo cat .apache-modsec.alias >> ~/.bash_aliases
+wget https://raw.githubusercontent.com/Apache-Labor/labor/master/bin/.apache-modsec.alias
+wget https://raw.githubusercontent.com/avarx/t3ModSec/master/t3ModSec.conf
+sudo cat t3ModSec.conf >> /etc/apache2/apache2.conf
+rm -rf t3ModSec.conf
+cat .apache-modsec.alias >> ~/.bash_aliases
 rm -rf .apache-modsec.alias
 
 # PHP
