@@ -12,8 +12,7 @@ sudo apt-get install libapache2-mod-security2 -y
 sudo wget https://raw.githubusercontent.com/SpiderLabs/owasp-modsecurity-crs/v3.0/master/crs-setup.conf.example
 sudo mv crs-setup.conf.example /etc/modsecurity/modsecurity.conf
 # ModSecurity | t3ModSec.conf
-wget https://raw.githubusercontent.com/avarx/t3ModSec/master/t3ModSec.conf
-sudo cat t3ModSec.conf >> /etc/apache2/apache2.conf
+sudo bash -c "cat t3ModSec.conf >> /etc/apache2/apache2.conf"
 rm -rf t3ModSec.conf
 # ModSecurity | Rules
 wget https://github.com/SpiderLabs/owasp-modsecurity-crs/archive/v3.0/master.zip
@@ -27,7 +26,7 @@ rm -rf .apache-modsec.alias
 
 # Cleanup
 cd ..
-rm -rf t3ModSec
+rm -rf t3ModSec/
 
 # PHP
 sudo apt-get install -y php-soap
