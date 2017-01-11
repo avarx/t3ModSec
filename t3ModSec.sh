@@ -19,6 +19,7 @@ rm -rf t3ModSec.conf
 wget https://github.com/SpiderLabs/owasp-modsecurity-crs/archive/v3.0/master.zip
 unzip master.zip
 sudo mv owasp-modsecurity-crs-3.0-master /etc/apache2/conf-available/owasp-modsecurity-crs-3.0.0
+rm -rf master.zip
 # ModSecurity | aliases
 wget https://raw.githubusercontent.com/Apache-Labor/labor/master/bin/.apache-modsec.alias
 cat .apache-modsec.alias >> ~/.bash_aliases
