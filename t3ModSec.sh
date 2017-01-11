@@ -24,6 +24,10 @@ wget https://raw.githubusercontent.com/Apache-Labor/labor/master/bin/.apache-mod
 cat .apache-modsec.alias >> ~/.bash_aliases
 rm -rf .apache-modsec.alias
 
+# Cleanup
+cd ..
+rm -rf t3ModSec
+
 # PHP
 sudo apt-get install -y php-soap
 sudo apt-get install -y php-zip
