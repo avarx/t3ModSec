@@ -6,11 +6,12 @@ To be able to define a **working ruleset for TYPO3**  we need a test environment
 ## Usage
 Get a LAMP then run the script.
 
-We expect ```/var/www``` as your webroot.
+Go to ```webroot```.
 
-1. ```wget https://avarx.link/t3ModSec```
-2. ```chmod +x t3ModSec```
-3. ```./t3ModSec```
+1. ```git clone https://github.com/avarx/t3ModSec.git```
+2. ```cd t3ModSec```
+3. ```chmod +x t3ModSec.sh```
+4. ```./t3ModSec.sh```
 
 ## Contributing
 
@@ -21,6 +22,7 @@ We expect ```/var/www``` as your webroot.
 | 2017      | Jan | Version 1.0.0 - Raw CRS3 |
 
 ## Credits
-[Christian Folini](https://www.christian-folini.ch/)
+**[Christian Folini](https://www.christian-folini.ch/)**
+Thanks for your help and patience
 
 ## License
