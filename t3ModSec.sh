@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Update System
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get update -y
+sudo apt-get upgrade -y
 # Install Unzip
 sudo apt-get install unzip -y
 
@@ -25,9 +25,9 @@ cat .apache-modsec.alias >> ~/.bash_aliases
 rm -rf .apache-modsec.alias
 
 # PHP
-sudo apt-get install php-soap
-sudo apt-get install php-zip
-sudo apt-get install php-xml
+sudo apt-get install -y php-soap
+sudo apt-get install -y php-zip
+sudo apt-get install -y php-xml
 
 # Apache reload
 sudo service apache2 reload
