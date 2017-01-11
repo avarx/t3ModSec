@@ -23,6 +23,7 @@ Go to ```webroot```.
 
 ## Credits
 **[Christian Folini](https://www.christian-folini.ch/)**
+
 Thanks for your help and patience
 
 ## License
